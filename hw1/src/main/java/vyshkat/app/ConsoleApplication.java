@@ -90,7 +90,7 @@ public class ConsoleApplication {
 
         if (type == 1 || type == 3) {
             double energy = readNonNegativeDouble(
-                    "Суточное энергопотребление (кВт·ч): "
+                    "Суточное энергопотребление (кВт в ч): "
             );
             int batteryCharge = readIntInRange(
                     "Заряд батареи (0-100): ", 0, 100
@@ -154,7 +154,7 @@ public class ConsoleApplication {
             equipment = new Helmet(name);
         } else {
             double energy = readNonNegativeDouble(
-                    "Суточное энергопотребление (кВт·ч): "
+                    "Суточное энергопотребление (кВт в ч): "
             );
             int batteryCharge = readIntInRange(
                     "Заряд батареи (0-100): ", 0, 100
@@ -199,7 +199,7 @@ public class ConsoleApplication {
         System.out.println(
                 "Суммарное суточное энергопотребление: "
                         + rentalParkService.calculateTotalDailyEnergy()
-                        + " kWh"
+                        + " кВт в ч"
         );
     }
 
