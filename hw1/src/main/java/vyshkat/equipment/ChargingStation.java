@@ -2,7 +2,7 @@ package vyshkat.equipment;
 
 import vyshkat.interfaces.EnergyConsumer;
 
-public class ChargingStation extends vyshkat.equipment.Equipment implements EnergyConsumer {
+public class ChargingStation extends Equipment implements EnergyConsumer {
     private final double dailyEnergyConsumption;
     private final int batteryChargePercentage;
 
